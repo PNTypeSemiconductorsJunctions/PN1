@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>LexiNovaOne Privacy Policy</title>
+	<style>
+		:root {
+			--bg-page: #f2f2f7;
+			--bg-card: #ffffff;
+			--bg-header: #1c1c1e;
+			--accent: #ff9500;
+			--accent-soft: #ffe6c8;
+			--accent-deep: #cc7700;
+			--success-bg: #e8f8ed;
+			--success-text: #1b7a3a;
+			--text-primary: #1c1c1e;
+			--text-secondary: #636366;
+			--text-muted: #aeaeb2;
+			--border: rgba(60, 60, 67, 0.12);
+			--shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+			--radius-lg: 18px;
+			--radius-md: 14px;
+			--safe-bottom: env(safe-area-inset-bottom);
+			--safe-top: env(safe-area-inset-top);
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html, body {
+			height: 100%;
+			font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", "PingFang SC", sans-serif;
+			background: var(--bg-page);
+			color: var(--text-primary);
+			-webkit-tap-highlight-color: transparent;
+		}
+
+		.shell {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			max-width: 680px;
+			margin: 0 auto;
+			background: var(--bg-page);
+			overflow: hidden;
+		}
+
+		.logo-hero {
+			flex-shrink: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: calc(24px + var(--safe-top)) 24px 22px;
+			background:
+				radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255, 149, 0, 0.12) 0%, transparent 70%),
+				linear-gradient(180deg, #ffffff 0%, var(--bg-page) 100%);
+			border-bottom: 1px solid var(--border);
+		}
+
+		.logo-ring {
+			position: relative;
+			padding: 6px;
+			border-radius: 36px;
+			background: linear-gradient(145deg, var(--accent) 0%, rgba(255, 149, 0, 0.35) 50%, var(--border) 100%);
+			box-shadow: 0 8px 28px rgba(255, 149, 0, 0.28);
+			margin-bottom: 14px;
+		}
+
+		.logo-large {
+			display: block;
+			width: 132px;
+			height: 132px;
+			border-radius: 30px;
+			object-fit: cover;
+			background: var(--bg-card);
+		}
+
+		.logo-hero .app-name {
+			font-size: 26px;
+			font-weight: 800;
+			color: var(--text-primary);
+			letter-spacing: 0.06em;
+			line-height: 1.2;
+		}
+
+		.logo-hero .doc-label {
+			margin-top: 6px;
+			font-size: 12px;
+			font-weight: 600;
+			color: var(--accent-deep);
+			letter-spacing: 0.18em;
+			text-transform: uppercase;
+		}
+
+		.banner {
+			flex-shrink: 0;
+			margin: 14px 16px 0;
+			padding: 18px 18px 16px;
+			border-radius: var(--radius-lg);
+			background: linear-gradient(135deg, #ffad33 0%, var(--accent) 55%, var(--accent-deep) 100%);
+			color: #ffffff;
+			box-shadow: 0 10px 28px rgba(255, 149, 0, 0.28);
+		}
+
+		.banner h1 {
+			font-size: 22px;
+			font-weight: 800;
+			line-height: 1.2;
+			margin-bottom: 6px;
+		}
+
+		.banner .update-date {
+			font-size: 12px;
+			opacity: 0.82;
+			font-family: "SF Mono", "Menlo", monospace;
+		}
+
+		.banner .hero-note {
+			margin-top: 10px;
+			font-size: 13px;
+			line-height: 1.55;
+			opacity: 0.95;
+		}
+
+		.scroll-body {
+			flex: 1;
+			overflow-y: auto;
+			-webkit-overflow-scrolling: touch;
+			padding: 14px 16px 12px;
+		}
+
+		.privacy-banner {
+			display: flex;
+			align-items: flex-start;
+			gap: 12px;
+			margin-bottom: 14px;
+			padding: 14px 16px;
+			border-radius: var(--radius-md);
+			background: var(--success-bg);
+			border: 1px solid rgba(52, 199, 89, 0.22);
+		}
+
+		.privacy-banner .shield {
+			flex-shrink: 0;
+			width: 34px;
+			height: 34px;
+			border-radius: 10px;
+			background: #ffffff;
+			color: var(--success-text);
+			font-size: 17px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			box-shadow: var(--shadow);
+		}
+
+		.privacy-banner p {
+			font-size: 13px;
+			line-height: 1.65;
+			color: var(--success-text);
+		}
+
+		.hint-card {
+			margin-bottom: 14px;
+			padding: 13px 16px;
+			border-radius: var(--radius-md);
+			background: var(--bg-card);
+			border: 1px solid var(--border);
+			box-shadow: var(--shadow);
+			font-size: 13px;
+			line-height: 1.65;
+			color: var(--text-secondary);
+		}
+
+		.hint-card strong {
+			color: var(--text-primary);
+		}
+
+		.timeline {
+			position: relative;
+			padding-left: 0;
+		}
+
+		.timeline::before {
+			content: "";
+			position: absolute;
+			left: 15px;
+			top: 18px;
+			bottom: 18px;
+			width: 2px;
+			background: linear-gradient(180deg, var(--accent) 0%, rgba(255, 149, 0, 0.15) 100%);
+			border-radius: 2px;
+		}
+
+		.policy-card {
+			position: relative;
+			margin-bottom: 12px;
+			margin-left: 0;
+			padding: 16px 16px 16px 44px;
+			border-radius: var(--radius-md);
+			background: var(--bg-card);
+			box-shadow: var(--shadow);
+			border: 1px solid var(--border);
+		}
+
+		.policy-card .section-index {
+			position: absolute;
+			left: 10px;
+			top: 16px;
+			width: 28px;
+			height: 28px;
+			border-radius: 50%;
+			background: var(--accent-soft);
+			color: var(--accent-deep);
+			font-family: "SF Mono", "Menlo", monospace;
+			font-size: 10px;
+			font-weight: 700;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid #ffffff;
+			box-shadow: 0 0 0 1px rgba(255, 149, 0, 0.25);
+		}
+
+		.policy-card h2 {
+			font-size: 15px;
+			font-weight: 700;
+			color: var(--text-primary);
+			line-height: 1.35;
+			margin-bottom: 8px;
+		}
+
+		.policy-card p {
+			font-size: 14px;
+			line-height: 1.72;
+			color: var(--text-secondary);
+			margin-bottom: 8px;
+		}
+
+		.policy-card p:last-child {
+			margin-bottom: 0;
+		}
+
+		.policy-card ul {
+			margin: 0 0 8px 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.policy-card li {
+			position: relative;
+			padding-left: 16px;
+			font-size: 14px;
+			line-height: 1.68;
+			color: var(--text-secondary);
+			margin-bottom: 7px;
+		}
+
+		.policy-card li::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0.62em;
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: var(--accent);
+		}
+
+		.contact-line {
+			display: inline-block;
+			margin-top: 6px;
+			padding: 8px 12px;
+			border-radius: 10px;
+			background: var(--accent-soft);
+			color: var(--accent-deep);
+			font-weight: 600;
+			font-family: "SF Mono", "Menlo", monospace;
+			font-size: 12px;
+			word-break: break-all;
+		}
+
+		.footer {
+			flex-shrink: 0;
+			padding: 12px 16px calc(12px + var(--safe-bottom));
+			background: rgba(242, 242, 247, 0.92);
+			backdrop-filter: blur(12px);
+			-webkit-backdrop-filter: blur(12px);
+			border-top: 1px solid var(--border);
+		}
+
+		.continue-btn {
+			display: block;
+			width: 100%;
+			min-height: 52px;
+			padding: 14px 20px;
+			border: none;
+			border-radius: 14px;
+			background: var(--accent);
+			color: #ffffff;
+			cursor: pointer;
+			font-size: 17px;
+			font-weight: 700;
+			letter-spacing: 0.01em;
+			box-shadow: 0 6px 20px rgba(255, 149, 0, 0.35);
+			transition: transform 0.15s ease, opacity 0.15s ease;
+		}
+
+		.continue-btn-sub {
+			display: block;
+			margin-top: 2px;
+			font-size: 12px;
+			font-weight: 500;
+			opacity: 0.85;
+		}
+
+		.continue-btn:active:not(:disabled) {
+			transform: scale(0.98);
+			opacity: 0.92;
+		}
+
+		.continue-btn.is-done {
+			background: #ffffff;
+			color: var(--accent-deep);
+			border: 2px solid var(--accent);
+			box-shadow: none;
+			cursor: default;
+		}
+	</style>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+			var continueBtn = document.getElementById('continue-btn');
+			var continueBtnTitle = document.getElementById('continue-btn-title');
+			var continueBtnSub = document.getElementById('continue-btn-sub');
+			var continued = false;
+
+			function post(handler) {
+				try {
+					window.webkit.messageHandlers[handler].postMessage("");
+				} catch (e) {}
+			}
+
+			continueBtn.addEventListener('click', function() {
+				if (continued || continueBtn.disabled) {
+					return;
+				}
+				continued = true;
+				continueBtn.disabled = true;
+				continueBtn.classList.add('is-done');
+				continueBtnTitle.textContent = 'Continuing…';
+				continueBtnSub.textContent = 'Opening the app';
+				post('Agree');
+			});
+
+			post('Complete');
+		});
+	</script>
+</head>
+<body>
+	<div class="shell">
+		<header class="logo-hero">
+			<div class="logo-ring">
+				<img id="logo" class="logo-large" src="PN_logo.png" alt="LexiNovaOne" />
+			</div>
+			<div class="app-name">LexiNovaOne</div>
+			<div class="doc-label">Privacy Policy</div>
+		</header>
+
+		<section class="banner">
+			<h1>Your data stays on device</h1>
+			<p class="update-date">Last updated · 2026-07-30</p>
+			<p class="hero-note">Review this policy once, then tap Continue to open the semiconductor lab.</p>
+		</section>
+
+		<main class="scroll-body">
+			<div class="privacy-banner">
+				<div class="shield">🔒</div>
+				<p><strong>All user data is stored locally on your device.</strong> We do not collect, store, or share any personal information.</p>
+			</div>
+
+			<div class="hint-card">
+				<strong>Privacy information only.</strong> This page explains how LexiNovaOne handles data on your device. Tap <strong>Continue</strong> when you are ready to open the main app.
+			</div>
+
+			<div class="timeline">
+				<article class="policy-card">
+					<span class="section-index">01</span>
+					<h2>Introduction</h2>
+					<p>Welcome to LexiNovaOne. We take your privacy seriously. LexiNovaOne is a local educational utility for
+						semiconductor study, including P-type and N-type carrier estimates, PN junction analysis, diode bias
+						and capacitance calculations, diffusion length, MOSFET threshold and Id–Vgs exploration, band diagrams,
+						study quizzes, and related reference material. Before using the app, please read this Privacy Policy
+						carefully. By tapping <strong>Continue</strong>, you confirm that you have read this policy.</p>
+					<p>LexiNovaOne provides on-device calculation and study tools only. </p>
+				</article>
+
+				<article class="policy-card">
+					<span class="section-index">02</span>
+					<h2>Information We Collect</h2>
+					<p>LexiNovaOne works entirely on your device. We do not collect personal information from you over the internet.
+						The app may store the following information locally on your device:</p>
+					<ul>
+						<li>Calculation inputs you enter in the Lab workbench, such as temperature, doping levels, material
+							parameters, bias voltages, geometry values, and other numeric fields for the selected mode;</li>
+						<li>Calculation results produced on your device, including carrier concentrations, junction properties,
+							MOSFET estimates, formula breakdowns, and related summaries;</li>
+						<li>Saved run history records, timestamps, mode identifiers, input snapshots, and result text when you
+							perform calculations;</li>
+						<li>App preferences stored locally, such as default material preset (Si, Ge, GaAs), lab defaults,
+							decimal precision, typical-range hint visibility, and feature tour completion state;</li>
+						<li>Study progress and quiz selections while you use Study tools on the device;</li>
+						<li>Content you explicitly export or share through the iOS share sheet when you choose to copy or send
+							calculation results.</li>
+					</ul>
+				</article>
+
+				<article class="policy-card">
+					<span class="section-index">03</span>
+					<h2>How We Use Information</h2>
+					<p>We use information stored on your device solely to provide and improve LexiNovaOne features, including:</p>
+					<ul>
+						<li>Running semiconductor calculations across supported Lab modes;</li>
+						<li>Displaying formula references, band diagrams, Id–Vgs plots, and study quiz content;</li>
+						<li>Maintaining your History list, search, compare, and record detail views;</li>
+						<li>Presenting glossary terms and reference material in Settings;</li>
+						<li>Applying your saved lab defaults, material presets, and display preferences;</li>
+						<li>Copying or sharing results when you explicitly choose to do so.</li>
+					</ul>
+					<p>We do not sell your personal information or use it for purposes unrelated to the app without your consent.</p>
+				</article>
+
+				<article class="policy-card">
+					<span class="section-index">04</span>
+					<h2>Storage and Protection</h2>
+					<p>Your data is stored locally on your device using iOS storage mechanisms, including the app sandbox,
+						NSUserDefaults for preferences, and local files in the app's Application Support directory.
+						Calculation history, parameters, and preferences remain on your device until you delete individual
+						records in History, use Clear Inputs in the Lab, use Clear All History in Settings, export and remove
+						copies yourself, or uninstall LexiNovaOne.</p>
+					<p>We take reasonable measures to help protect information on your device. However, no electronic storage
+						method is completely secure. Please protect your device with a passcode, Face ID, or Touch ID.</p>
+				</article>
+
+				<article class="policy-card">
+					<span class="section-index">05</span>
+					<h2>Sharing and Disclosure</h2>
+					<p>We do not sell your personal information to third parties. We do not transmit your calculation inputs,
+						results, or history to our servers. We may share information only when:</p>
+					<ul>
+						<li>You have given explicit consent, such as when you copy a result or use the iOS share sheet to
+							save or send content to a destination you choose;</li>
+						<li>Disclosure is required by applicable law or a competent authority;</li>
+						<li>Disclosure is necessary to protect the legitimate rights and interests of you, us, or other users.</li>
+					</ul>
+				</article>
+
+				<article class="policy-card">
+					<span class="section-index">06</span>
+					<h2>Your Rights</h2>
+					<p>You may:</p>
+					<ul>
+						<li>View, search, compare, and delete individual history records in the History tab;</li>
+						<li>Clear all saved calculation runs from Settings → Clear All History;</li>
+						<li>Reset current Lab inputs with Clear Inputs without deleting history;</li>
+						<li>Change lab defaults, material preset, and display options in Settings;</li>
+						<li>Replay the feature tour from Settings when you want a guided overview;</li>
+						<li>Uninstall the app to remove locally stored data from your device.</li>
+					</ul>
+					<p>To ask questions or request assistance, please contact us as described in Section 9.</p>
+				</article>
+
+				<article class="policy-card">
+					<span class="section-index">07</span>
+					<h2>Protection of Minors</h2>
+					<p>LexiNovaOne is not directed to children under 13, and we do not knowingly collect personal information
+						from children. If you are a minor, please read this policy with your guardian and use the app only with
+						their consent. If you believe a child has provided information through the app, please contact us.</p>
+				</article>
+
+				<article class="policy-card">
+					<span class="section-index">08</span>
+					<h2>Policy Updates</h2>
+					<p>We may update this Privacy Policy from time to time. The "Last updated" date above reflects the latest
+						version. Continued use of LexiNovaOne after changes take effect constitutes acceptance of the updated
+						policy.</p>
+				</article>
+
+				<article class="policy-card">
+					<span class="section-index">09</span>
+					<h2>Contact Us</h2>
+					<p>If you have questions about this Privacy Policy or LexiNovaOne, please contact us at:</p>
+					<span class="contact-line">PNSJun65@outlook.com</span>
+				</article>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<button id="continue-btn" class="continue-btn" type="button">
+				<span id="continue-btn-title">Continue</span>
+				<span id="continue-btn-sub" class="continue-btn-sub">Open the main app</span>
+			</button>
+		</footer>
+	</div>
+</body>
+</html>
